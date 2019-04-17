@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="img/leagueHome.png" type="img/png">
+    <link rel="stylesheet" type="text/css" href="css/Home.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Главная League Of Legends</title>
+</head>
+<body>
+<nav id="body">
+    <div class="topHeader">    
+        <ul>
+            <!-- кнопка поиска -->
+            <form class="search">
+                <div>
+                    <input type="search" name="text" placeholder="Поиск по сайту...">
+                    <button value="button">Поиск</button>
+                </div>
+            </form>
+            <div class="navMenu">
+                <div>
+                    <p>Меню</p>
+                    <div class="menuPosition">
+                        <a href="HomeRegistration.html">Регистрация</a>
+                        <a href="Raiting.html">Рейтинг</a>
+                        <a href="classes.html">Чемпионы</a>
+                        <a href="gallery.html">Галерея</a>
+                    </div>
+                </div>
+            </div>
+            <li><a href="#slider">Игровые классы</a></li>
+            <li><a href="#content">Об игре</a></li>
+            <li><a href="#computer">Системные требования</a></li> 
+        </ul>
+        <!-- срабатывает мобильное меню при разрешении max-widht 768px -->
+    <form class="searchMobile">
+        <div>
+            <input type="search" name="text" placeholder="Поиск по сайту...">
+                <button value="button">Поиск</button>
+        </div>
+    </form>
+        <div class="container">
+            <div class="headerBurger">
+                <input class="nav-burger__checkbox" type="checkbox" id="burger">
+                <label class="nav-burger" for="burger">Меню</label>
+                <nav class="nav">
+                    <a class="nav__item" href="HomeRegistration.html">Регистрация</a>
+                    <a class="nav__item" href="raiting.html">Об игре</a>
+                    <a class="nav__item" href="classes.html">Игровые классы</a>
+                    <a class="nav__item" href="gallery.html">Галерея</a>
+                </nav>
+            </div>
+        </div>
+        <!-- конец мобильного меню 768px -->
+        <header class="header">
+            <img class="logoLeague" src="img/45.png" alt="logo League of legends"
+                 title="Логотип игры League of legends">
+            <p>ПРИСОЕДИНЯЙСЯ К LEAGUE OF LEGENDS</br>
+                <span class="headerText">СТАНЬ НОВОЙ ЛЕГЕНДОЙ</span></p>
+            <hr>
+            <p>Узнать больше об игре</p>
+            <a href="#slider"><img class="imgStrela" src="img/strela.png" alt="стрелка для перемотки к контенту" title="стрелка для перемотки к контенту"></a>
+        </header>
+    </div>
+</nav>
+<!-- начало Content -->
+<div class="slideshow-container" id="slider">
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/101.jpeg" alt="Танки" title="Танки">
+        <div class="text"><p>ТАНКИ ПРИНИМАЮТ УДАР НА СЕБЯ</p>
+            Танки славятся способностью принимать на себя удары, которые могли бы убить более слабых союзников.
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/102.jpeg" alt="Войны" title="Войны">
+        <div class="text"><p>ВОИНЫ &ndash; ОТЛИЧНЫЕ ДУЭЛЯНТЫ</p>
+            Воины заключают в себе силу и выносливость, рождены для сражений и предпочитают ближний бой.
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/103.jpeg" alt="Маги" title="Маги">
+        <div class="text"><p>МАГИ ПЕРЕПОЛНЕНЫ СИЛОЙ</p>
+            Маги &ndash; агрессивные заклинатели, которые уничтожают врагов с помощью магических атак, заклинаний и умений.
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/104.jpeg" alt="Убийцы" title="Убийцы">
+        <div class="text"><p>УБИЙЦЫ ЛЮБЯТ ОХОТУ</p>
+            Убийцы &ndash; это мастера точности, подвижные охотники, которые всегда ищут возможность идеально устранить цель.
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/105.jpeg" alt="Стрелки" title="Стрелки">
+        <div class="text"><p>СТРЕЛКИ НЕСУТ БОЛЬ</p>
+            Стрелки &ndash; дальнобойные бойцы, сильные, но хрупкие. Отлично работают в команде &ndash; союзники поглощают
+            урон,стрелки наносят.
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/106.jpeg" alt="Поддержка" title="Поддержка">
+        <div class="text"><p>ПОДДЕРЖКА ПРИКРОЕТ ВАС</p>
+            Чемпионы поддержки &ndash; это стойкие защитники, которые контролируют поле боя, помогая союзникам и мешая врагам.
+        </div>
+    </div>
+    <!-- кнопки вперед и назад -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+    <!-- доты -->
+<div class="dotFlex">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+    <!-- конец дотов -->
+<div class="content" id="content">
+    <div class="contentNav">
+        <div class="blockContentNav"><img class="blockContentNavImg" src="img/garen.jpg" alt="garen" title="Картинка защитников"></div>
+        <div class="blockContentNav2">
+									<h2>League of Legends &ndash; это соревновательная интенсивная игра в жанре &quot;экшен-стратегия&quot;, в которую можно играть как в одиночку, так и с друзьями. Эта игра создана для тех, кто любит добиваться победы любой ценой.</h2>
+												<h4>Бои лицом к лицу</h4>
+												<p>Готовьтесь! Чтобы сокрушать врагов в мелких стычках и в масштабных сражениях 5 на 5 игроков, вам понадобятся стратегическое мышление, молниеносные рефлексы и навыки командной игры.</p>
+												<hr>
+												<h4>Разрабатывайте стратегию, развивайтесь</h4>
+
+												<p>Игра постоянно обновляется, в нее добавляются карты и игровые режимы, а в Лигу вступают новые чемпионы. В этой игре вас ограничивает только собственная фантазия.</p>
+												<hr>
+
+												<h4>Разрабатывайте стратегию, развивайтесь</h4>
+												<p>Технологии подбора игроков в League of Legends всегда смогут предложить вам подходящих соперников &ndash; не важно, играете ли вы против ботов или уже начали восхождение к вершинам Лиги.</p>
+												<hr>
+												<h4>Сражайтесь с честью</h4>
+
+												<p>Играйте честно, и вы получите от товарищей особую награду за поведение, достойное настоящего спортсмена.</p>
+                                                <hr>
+												<h4>Войдите в мир esports</h4>
+
+												<p>League of Legends &ndash; самая активная площадка для состязаний в мире. В рамках игры проходит множество всемирных турниров, включая престижный чемпионат, где профессиональные игроки сражаются за миллионные призы.</p>
+                                                <hr>
+												<h4>Крупнейшее в мире сетевое игровое сообщество</h4><p>Вступите в крупнейшее в мире игровое сообщество: заводите друзей, собирайте команды, сражайтесь с десятками миллионов соперников по всему миру, а потом обменивайтесь стратегиями на reddit, YouTube и игровых форумах</p>
+		</div>
+    </div>
+</div>
+    <!-- КОНЕЦ КОНТЕНТА -->
+    <!-- НАЧАЛО ИНФОРМАЦИИ О ПК -->
+<div id="computer">
+    <h1>Системные требования для игры (ПК):</h1>
+    <div class="footerBoth">
+        <div class="treeDetail">
+            <details>
+                <summary class="tehnicComputer">Операционная система Windows<i class="fa fa-windows" aria-hidden="true" title="Windows"></i></summary>
+                <details>
+                    <summary class="treeSummaryx2">МИНИМАЛЬНЫЕ ТРЕБОВАНИЯ.</summary>
+                    <p>Процессор с частотой 2 ГГц (процессор SSE2 и выше);</p>
+                    <p>1 ГБ оперативной памяти (2 ГБ для ОС Windows Vista и выше);</p>
+                    <p>8 ГБ свободного места на жестком диске;</p>
+                    <p>Видеокарта с поддержкой шейдеров версии 2.0;</p>
+                    <p>Разрешение экрана до 1920x1200;</p>
+                    <p>DirectX 9.0c или выше;</p>
+                    <p>Windows XP (ТОЛЬКО с пакетом обновления 3), Windows Vista,Windows 7, Windows 8 или Windows
+                        10.</p>
+                    <p>Мы больше не поддерживаем Windows XP с пакетами обновления 1 или 2. Поскольку для
+                        64&ndash;разрядной</p>
+                    <p>Версии Windows XP пакет обновления 3 не выпускался, для игры в League of Legends вам
+                        потребуется</p>
+                    <p>Перейти на более новую версию Windows.</p>
+                    <p>Если вы пользуетесь 32&ndash;разрядной версией Windows XP и хотите установить пакет обновления 3,</p>
+                    <p>Перейдите по этой ссылке.
+                        Внимание: мы поддерживаем только подлинные копии Microsoft Windows.</p>
+                </details>
+                <details>
+                    <summary class="treeSummaryx2">РЕКОМЕНДУЕМЫЕ ТРЕБОВАНИЯ.</summary>
+                    <p>Процессор с частотой 3 ГГц;</p>
+                    <p>2 ГБ оперативной памяти (4 ГБ для ОС Windows Vista и выше);</p>
+                    <p>12 ГБ свободного места на жестком диске;</p>
+                    <p>Видеокарта уровня GeForce 8800/AMD Radeon HD 5670 и выше (дискретный GPU с 512+ МБ видеопамяти
+                        (VRAM));</p>
+                    <p>DirectX 9.0c или выше;</p>
+                    <p>ОС Windows XP с установленным последним пакетом обновления, Windows Vista с установленным
+                        последним.</p>
+                    <p>Пакетом обновления, Windows 7 с установленным последним пакетом, Windows 8.1 или Windows 10.</p>
+                    <p>.NET Framework последней версии от Microsoft;</p>
+                    <p>Для подключения к PvP.net. необходима последняя версия AdobeAir. Adobe Air входит во все
+                        установки.</p>
+                    <p>League of Legends; кроме того, его можно загрузить с сайта Adobe.</p>
+                    <p>Внимание: мы поддерживаем только подлинные копии Microsoft Windows.</p>
+                </details>
+                <details>
+                    <summary class="treeSummaryx2">РЕКОМЕНДАЦИИ ПО ОПТИМАЛЬНОМУ АППАРАТНОМУ ОБЕСПЕЧЕНИЮ.</summary>
+                    <p>ПРОЦЕССОР:Минимум: процессор с частотой 2 ГГц*</p>
+
+                    <p>*Игроки, которые используют многоядерные процессоры, должны убедиться, что каждое ядро имеет
+                        частоту
+                        2 ГГц и выше.</p>
+
+                    <p>Рекомендуется: двухъядерный процессор с частотой 3 ГГц</p>
+
+                    <p>Что это?</p>
+                    <p>Центральный процессор (CPU) фактически является мозгом вашего компьютера. Процессор обрабатывает
+                        все
+                        &ndash; от самых простых команд до самых сложных вычислений.</p>
+
+                    <p>Зачем это мне?</p>
+                    <p>Ваш центральный процессор (CPU) обрабатывает все команды и вычисления. В частности, от него
+                        зависит,
+                        насколько быстро запускается программа. Скорость работы процессора измеряется в гигагерцах
+                        (ГГц); 1
+                        ГГц эквивалентен одному миллиарду команд в секунду. Чем лучше ваш процессор, тем быстрее будет
+                        работать ваш компьютер.</p>
+
+
+                    <p>ПАМЯТЬ (RAM)</p>
+                    <p>Минимум: 1 ГБ оперативной памяти*</p>
+
+                    <p>*(пользователям Windows Vista и 7 желательно иметь 2 ГБ и больше).</p>
+
+                    <p>Рекомендуется: 4 ГБ оперативной памяти</p>
+
+                    <p>Что это?</p>
+                    <p>Оперативная память (RAM) &ndash; это специальный вид памяти, установленный непосредственно на вашей
+                        материнской плате. Когда вы запускаете программу, она загружается с жесткого диска в оперативную
+                        память. Запись и чтение из оперативной памяти происходят гораздо быстрее, это позволяет
+                        программам
+                        загружаться очень быстро. При перезагрузке компьютера оперативная память полностью
+                        освобождается.</p>
+
+                    <p>Зачем это мне?</p>
+                    <p>Чем больше у вас оперативной памяти, тем больше информации в ней может храниться (вместо жесткого
+                        диска). Это значительно увеличивает скорость работы вашего компьютера. К сожалению, если у вас
+                        открыто много программ, они могут полностью занять всю доступную память. Это может привести к
+                        очень
+                        медленной загрузке, а также к вылетам из игры. Перед запуском League of Legends постарайтесь
+                        закрыть
+                        как можно больше программ, в которых нет необходимости. Вы тут же заметите прибавку к
+                        скорости!</p>
+
+
+                    <p>МЕСТО НА ДИСКЕ</p>
+                    <p>Минимум: 8 ГБ свободного места на жестком диске</p>
+
+                    <p>Рекомендуется: 12 ГБ свободного места на жестком диске</p>
+
+                    <p>Что это?</p>
+                    <p>Жесткий диск &ndash; это место, где хранятся все ваши данные. На нем физически находятся все ваши файлы,
+                    папки, программы и т.д. Информация на жестком диске хранится в виде магнитной записи, поэтому, в
+                    отличие от оперативной памяти, она остается на диске даже после выключения компьютера.
+                    (Твердотельные накопители (SSDs) работают по принципу флеш-памяти; в отличие от традиционных дисков,
+                    в них нет движущихся частей.)</p>
+
+                    <p>Зачем это мне?</p>
+                    <p>Для установки League of Legends и ее обновлений, которые выходят каждые две недели, необходимо
+                        иметь
+                        свободное место на диске. С учетом сохраняющихся игровых логов и дополнительного контента,
+                        который
+                        обычно добавляется к игре, размер необходимого для League of Legends места постоянно растет. По
+                        этой
+                        причине на вашем жестком диске лучше иметь большой объем свободного места. Минимальные
+                        требования
+                        относятся к начальной установке, а рекомендуемые &ndash; отражают место, которое может потребоваться
+                        для
+                        установки будущих обновлений.</p>
+                </details>
+            </details>
+        </div>
+        <div class="treeDetail">
+            <details>
+                <summary class="tehnicComputer2">Операционная система MAC<i class="fa fa-apple" aria-hidden="true" title="MacOc"></i></summary>
+
+                <details>
+                    <summary class="treeSummaryx2">МИНИМАЛЬНЫЕ СИСТЕМНЫЕ ТРЕБОВАНИЯ.</summary>
+                    <p>Mac OS X 10.8.5 или выше</p>
+                    <p>2 ГБ RAM (настоятельно рекомендуем 4 ГБ)</p>
+                    <p>5 ГБ свободного места на жестком диске</p>
+                    <p>NVIDIA GeForce 8600M GT или ATI Radeon HD 2600 или лучше
+                        Разрешение экрана до 1920x1200</p>
+                    <p>Процессор SSE2 и выше (процессоры SSE1 не поддерживаются)</p>
+                </details>
+                <details>
+                    <summary class="treeSummaryx2">РЕКОМЕНДУЕМЫЕ ТРЕБОВАНИЯ.</summary>
+                    <p>Процессор SSE2 и выше (процессоры SSE1 не поддерживаются)</p>
+                    <p>Mac OS X 10.8.5 или выше</p>
+                    <p>4 ГБ RAM или выше</p>
+                    <p>10 ГБ свободного места на жестком диске</p>
+                    <p>NVIDIA GeForce GT 330M или ATI Radeon HD 4670 или лучше</p>
+                </details>
+            </details>
+        </div>
+    </div>
+</div>
+<!-- конец информация пк -->
+<!-- footer -->
+<div class="footer">
+    <div class="footerclown">
+        <span class="footerSocSeti">Обратная связь:</span><a href="https://vk.com/id426855141" target="_Blank" title="VK"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="https://www.facebook.com/" target="_Blank" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://twitter.com/" target="_Blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.instagram.com/" target="_Blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://plus.google.com/" target="_Blank" title="google+"><i
+            class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+    </div>
+    <p class="footerContent">© 2018 Games, Inc. Все права защищены.Games, League of Legends являются торговыми знаками или зарегистрированными торговыми знаками, принадлежащими Games, Inc.
+        </br>
+        Design by Анатолий Кишкурно.</p>
+
+</div>
+<!-- конец footer -->
+
+<!-- начало скрипта -->
+<script src="https://use.fontawesome.com/264c625804.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

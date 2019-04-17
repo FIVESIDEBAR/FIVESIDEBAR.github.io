@@ -1,0 +1,606 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);  
+font-size: 20px;
+font-family: 'Arial', sans-serif;
+}
+em {
+	font-weight: bold;
+}
+h1 {
+	color: white;
+	text-align: center;
+}
+hr {
+	margin: 40px 0 40px 0;
+}
+.backMainPage {
+	position: absolute;
+	top: -15px;
+}
+.MainPage {
+	font-size: 15px;
+	color: white;
+	position: absolute;
+	top:2em;
+	white-space: nowrap;
+}
+.backMainPagePicture {
+	width: 80px;
+}
+.backMainPagePicture:hover+.MainPage {
+	color: red
+}
+.MainPage:hover {
+	font-size: 15px;
+	color: red;
+	top: 2em;
+}
+.rasporka {
+	margin-bottom: 20px;
+}
+.displayV2 {
+	display: none;
+}
+div.containerTree {
+	border-radius: 15px;
+	position: relative;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+background: #f0f9ff; /* Old browsers */
+background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+
+	width: 90%;
+	margin: 0 auto;
+}
+span {
+	display: inline-block;
+}  
+					/* ШАПКА МЕНЮ   */
+.container {
+	  width: 100%;
+	  margin: 0 auto;
+}
+.headerBurger {
+	  height: 55px;
+	  background-color: black;
+	  position: relative;
+}
+.nav {
+	  width: 100%;
+	  box-shadow: inset 0 5px rgba(0, 0, 0, 0.5);
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  z-index: 100;
+	  display: none;
+	}
+.nav__item {
+	  display: block;
+	  height: 56px;
+	  font-weight: bold;
+	  color: #fff;
+	  font-size: 14px;
+	  line-height: 56px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  background-color: darkslategray;
+	  transition: background-color 0.1s linear, color 0.1s linear;
+	}
+.nav__item:not(:first-of-type) {
+	  border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+.nav__item:not(:last-of-type) {
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+.nav__item:last-of-type {
+	  box-shadow: inset 0 -5px 10px -5px rgba(0, 0, 0, 0.4);
+	}
+.nav__item:hover {
+	  background-color: teal;
+	}
+.nav__item:active {
+	  background-color: #2768c1;
+	  color: #fff;
+	}
+.nav-burger {
+	  display: block;
+	  width: 25px;
+	  height: 23px;
+	  cursor: pointer;
+	  color: transparent;
+	  font-size: 0;
+	  background: url("../img/icon-menu.svg") no-repeat;
+	  position: absolute;
+	  top: 16px;
+	  right: 20px;
+	  z-index: 1;
+	}
+.nav-burger__checkbox {
+	  display: none;
+	}
+.nav-burger__checkbox:checked + .nav-burger {
+	  background-image: url("../img/icon-cross.svg");
+	}
+.nav-burger__checkbox:checked ~ .nav {
+	  display: block;
+	}
+.textMenuNav-burger {
+		font-size: 30px;
+		display: block;
+		color: white;
+		text-align: center;
+	}
+
+
+					/* первый блок со спрайтами */
+.contaier__block1 {
+	width: 60%;
+	padding-top: 60px;
+	margin-top: 50px;
+	margin-left: 30%;
+	margin-bottom: 100px;
+}
+.logoLeagueRene {
+	padding-top: 20px;
+	float: left;
+	margin-left: 10%;
+}
+.logoLeagueRene:hover {
+	transform: rotate(360deg);
+    transition: transform 1.5s;  
+}
+		/*начало спрайтов */
+.spriteGaren {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -220px -210px;	
+}
+.spriteRiven {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -440px -212px;	
+}
+.spriteMaokai {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -875px -110px;	
+}
+.spritePantheon {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -875px -160px;	
+}
+.spriteJax {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -277px -55px;	
+}
+		
+						/*начало второго блока с спрайтами */
+.contaier__block2 {
+	width: 60%;
+	margin-top: 100px;
+	margin-left: 5%;
+	margin-right: 45%;
+	margin-bottom: 100px;
+}
+.logoLeagueHeim {
+	float: right;
+	margin-right: 10%;
+}
+.logoLeagueHeim:hover {
+	transform: rotate(360deg);
+    transition: transform 1.5s;  
+}
+		/*начало спрайтов */
+.spriteAnivia {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -820px -56px;	
+}
+.spriteVeigar {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -440px -110px;	
+}
+.spriteOrianna {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -110px -160px;	
+}
+.spriteTwisted {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -168px -5px;	
+}
+.spriteCassiopea {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -440px -160px;	
+}
+
+						/*начало третьего блока с спрайтами */
+
+.contaier__block3 {
+	width: 50%;
+	margin-top: 100px;
+	margin-left: 45%;
+	margin-right: 5%;
+	margin-bottom: 50px;
+}
+.logoLeagueJinx {
+	float: left;
+	margin-left: 10%;
+}
+.logoLeagueJinx:hover {
+	transform: rotate(360deg);
+    transition: transform 1.5s;  
+}
+/*начало спрайтов */
+.spriteAshe {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -165px -55px;	
+}
+.spriteVarus {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -55px -263px;	
+}
+.spriteDraven {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -440px -265px;	
+}
+.spriteCaitlyn {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -602px -108px;	
+}
+.spriteGraves {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -820px -211px;	
+}
+						/*начало четвертого блока с спрайтами */
+.contaier__block4 {
+	width: 60%;
+	margin-top: 100px;
+	margin-left: 15%;
+	margin-right: 35%;
+	margin-bottom: 50px;
+}
+.logoLeagueNami {
+	float: right;
+	margin-right: 10%;
+}
+.logoLeagueNami:hover {
+	transform: rotate(360deg);
+    transition: transform 1.5s;  
+}
+	/*начало спрайтов */
+.spriteTaric {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -385px -110px;	
+}
+.spriteLulu {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -385px -265px;	
+}
+.spriteSona {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -4px -107px;	
+}
+.spriteLeona {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -276px -212px;	
+}
+.spriteNami {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -820px -315px;	
+}
+						
+						/*начало пятого блока с спрайтами */
+
+.contaier__block5 {
+	width: 60%;
+	margin-top: 100px;
+	margin-left: 35%;
+	margin-right: 15%;
+	margin-bottom: 50px;
+}
+.logoLeagueAkali {
+	float: left;
+	margin-left: 10%;
+}
+.logoLeagueAkali:hover {
+	transform: rotate(360deg);
+    transition: transform 1.5s;  
+}
+	/*начало спрайтов */
+.spriteAkali {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -110px -210px;	
+}
+.spriteNocturne {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -820px -108px;	
+}
+.spriteTalon {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -385px -212px;	
+}
+.spriteXin {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -222px -5px;	
+}
+.spriteEvelyn {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -490px -55px;	
+}
+.spriteFizz {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -875px -212px;	
+}
+						/*начало шестого блока с спрайтами */
+.contaier__block6 {
+	width: 60%;
+	margin-top: 100px;
+	margin-left: 10%;
+	margin-right: 40%;
+	padding-bottom: 100px;
+}
+.logoLeagueRengar {
+	float: right;
+	margin-right: 5%;
+}
+.logoLeagueRengar:hover {
+	transform: rotate(360deg);
+    transition: transform 1.5s;  
+}
+	/*начало спрайтов */
+.spriteLee {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -276px -160px;	
+}
+.spriteHecarim {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -495px -265px;	
+}
+.spriteSejuani {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -222px -265px;	
+}
+.spriteElise {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -57px -160px;	
+}
+.spriteKha {
+	background-image: url("../img/allstars.png");
+	margin-left: 5px;
+	width: 47px;
+	height: 47px;
+	background-position: -547px -264px;	
+}
+.contaier__block8 {
+	width: 50%;
+	margin-left: 40%;
+	margin-right: 10%;
+	padding-bottom: 50px;
+}
+
+							/*начало седьмого блока с спрайтами */
+
+.contaier__block7 {
+	width: 90%;
+	margin: 0 auto 50px auto;
+}
+
+
+							/* кнопка бэкапа */
+
+.backUp {
+	z-index: 10;
+	position: fixed;
+	right: 1%;
+	bottom: 1%;
+}
+.backUp img {
+	width: 50px;
+}
+					/* шейк эффект для кнопки бэкапа */
+@-webkit-keyframes shake {
+0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.backUp:hover,
+.backUp:focus {
+-webkit-animation-name: shake;
+-webkit-animation-duration: 0.8s;
+-webkit-transform-origin:50% 50%;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+}
+
+							/* Foooter */
+footer {
+	position: relative;
+   	color: #a09b8c;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+   }
+.footerContainer {
+   	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex; 
+   	-webkit-box-pack: justify; 
+   	    -ms-flex-pack: justify; 
+   	        justify-content: center;
+   }
+.footerContainer div:nth-child(2){
+   		color: black;
+   		margin-top: 10px;
+   		text-align: center;
+   		color: white;
+   }
+.footerContainer div img {
+   		position: absolute;
+   		left: 10%;
+   }
+.footerContainer div:nth-child(3) {
+   		position: absolute;
+   		top: 1px;
+   }
+.footerContainer div:nth-child(3) a{
+   		color: white;
+   		font-size: 20px;
+   		padding: 5px;
+    }     
+@media screen and (max-width: 980px) {
+	span.MainPage {
+		display: none;
+	}
+	.logoLeagueRene,
+   	.logoLeagueHeim,
+   	.logoLeagueJinx,
+   	.logoLeagueNami,
+   	.logoLeagueAkali,
+   	.logoLeagueRengar {
+		transition: 0.5s ease;
+		margin: 0;
+	}
+}  
+@media screen and (max-width: 870px){
+	.displayV1 {
+		display: none;
+		}
+	.displayV2 {
+		display: block;
+		padding-top: 10px;
+		color: black;
+		opacity: 0.7;
+	}	
+   	.logoLeagueRene,
+   	.logoLeagueHeim,
+   	.logoLeagueJinx,
+   	.logoLeagueNami,
+   	.logoLeagueAkali,
+   	.logoLeagueRengar {
+		float: none;
+		width: 100%;
+		}
+	.logoLeagueRene:hover,
+	.logoLeagueHeim:hover,
+	.logoLeagueJinx:hover,
+	.logoLeagueNami:hover,
+	.logoLeagueAkali:hover,
+	.logoLeagueRengar:hover {
+		transform: none; 
+    	}
+    .contaier__block1,
+    .contaier__block2,
+    .contaier__block3,
+    .contaier__block4,
+    .contaier__block5,
+    .contaier__block6 {
+    	width: 80%;
+    	padding-top: initial;
+    	margin: 0 auto 100px auto;
+    }	
+    .footerContainer div img {
+   		display: none;
+   		}
+}
